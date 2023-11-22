@@ -33,7 +33,7 @@ function getCardsArrayExpDate(json, date) {
 	
 	// Проверка профиля
 	// Клиент не найден или нет поля карт или нет ни 1 карты
-	if (!json || !json.CardInfo || !json.CardInfo.length) return null;
+	if (!json || !json.CardInfo || json.CardInfo.length == 0) return null;
 
 	// Проверка всех карт
 	let x = 0;
